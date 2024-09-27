@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<img src="bean.jpg" style="width:20%">
+<h2>Mr Bean Movie Collapsibles</h2>
+
+<button type="button" class="collapsible">About the movie</button>
+<div class="content">
+<p>Mr. Bean is a British sitcom created by Rowan Atkinson and Richard Curtis, 
+produced by Tiger Aspect and starring Atkinson as the title character. 
+The sitcom consists of 15 episodes that were co-written by Atkinson alongside 
+Curtis and Robin Driscoll; for the pilot, it was co-written by Ben Elton. The 
+series was originally broadcast on ITV, beginning with the pilot on 1 January 
+1990 and ending with "The Best Bits of Mr. Bean" on 15 December 1995.</p>
+</div>
+
+
+<button type="button" class="collapsible">The Character</button>
+<div class="content">
+<p>Based on a character originally developed by Atkinson while he was studying 
+for his master's degree at Oxford University, the series centres on Mr. Bean, 
+described by Atkinson as "a child in a grown man's body", as he solves various 
+problems presented by everyday tasks and often causes disruption in the process. 
+The series has been influenced by physical comedy actors such as Jacques Tati 
+and those from early silent films.</p>
+</div>
+
+<button type="button" class="collapsible">Number of Viewers</button>
+<div class="content">
+<p>During its original five-year run, Mr. Bean met with widespread acclaim and 
+attracted large television audiences. The series was viewed by 18.74 million 
+viewers for the episode "The Trouble with Mr. Bean". The series has also been 
+sold in 245 territories worldwide and has inspired an animated spin-off and two 
+theatrical feature-length films along with Atkinson reprising his role as 
+Mr. Bean for a performance at the London 2012 Summer Olympics opening ceremony, 
+television commercials and several sketches for Comic Relief. Besides the 
+acclaim of the show, another reason for the show's appeal in hundreds of 
+territories worldwide is that the show uses very little intelligible dialogue, 
+making it accessible to people who know little or no English.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

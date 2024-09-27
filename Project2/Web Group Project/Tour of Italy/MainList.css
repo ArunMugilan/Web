@@ -1,0 +1,144 @@
+
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1800px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    .contents{height: 100%;}
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px){
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+    }
+
+    .thumbnail {
+    border: none;
+    border-radius: 0;
+    background-color: darkblue;
+  } 
+
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+
+  .center{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  }
+
+  body{
+    background-image: url(wood.jpg);
+  }
+
+
+  .ok {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;#70E5E4 
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+.subtopic {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #70E5E4; 
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+.foodname {
+    color: white ; 
+    
+    font-weight: 600;
+    margin: auto;
+  } 
+
+  .foodname1 {
+    color: darkblue ; 
+    font-family:'Apple Chancery',cursive;
+    font-weight: 600;
+    margin: auto;
+  } 
+
+  .bg-grey {
+    background-color: #f6f6f6;
+  }  
+
+  .container-fluid {
+    padding: 50px 60px;
+    height: auto;
+  }
+
+  .line{
+    height:2px;
+    border: 3px;
+    border-width:0;
+    color:darkblue;
+    background-color:darkblue;
+  }
+
+    .panel {
+      border: 1px solid lightblue;
+        border-radius:0;
+        transition: box-shadow 0.5s;
+    }
+
+    .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    }
+
+    .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+        background-color: #fff !important;
+        color: #f4511e;
+    }
+
+    .panel-heading {
+        color: #fff !important;
+        background-color: lightblue !important;
+        padding: 25px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .panel-footer {
+        background-color: #fff !important;
+    }
+
+    .panel-footer h3 {
+        font-size: 32px;
+    }
+
+    .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+    }
+
+    .panel-footer .btn {
+        margin: 15px 0;
+        background-color: #f4511e;
+        color: #fff;
+    }
+

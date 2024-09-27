@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SABAH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./SABAH.css" />
+</head>
+
+<body>
+  <div class="container1">
+    <div class="nav-bar">
+      <div class="menu-button" id="openM" onclick="menuOpen()"></div>
+      <div class="menu-button-close" style="display: none" id="closeM" onclick="menuClose()"></div>
+      <nav>
+        <div class="logo-nav">
+          <ul>
+            <li>
+              <a href="#logo"><img src="./imgs/OHAFLOGO-01V2.png" alt="Logo" width="140" height="64" /></a>
+            </li>
+            <li>
+              <form class="search" action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search" />
+                <button type="submit" style="float: left">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="registration">
+          <ul id="openMenu">
+            <li>
+              <a href="#about"><span class="fa fa-user-o"></span>
+                <p class="registeration-links">About us</p>
+              </a>
+            </li>
+            <li>
+              <a href="#contact-us"><span class="fa fa-phone"></span>
+                <p class="registeration-links">Contact</p>
+              </a>
+            </li>
+            <li>
+              <a href="#hazim-login">
+                <span class="fa fa-user-plus"></span>
+                <p class="registeration-links">Log&nbsp;in</p>
+              </a>
+            </li>
+            <li>
+              <a href="#hazim-signUP"><span class="fa fa-sign-in"></span>
+                <p class="registeration-links">Sign&nbsp;up</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="titlebg">
+      <div class="title">
+        <h1>WE ARE AT SABAH NOW</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="fcontainer">
+    <div class="bgcontainer">
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <img src="./imgs/sabah1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="./imgs/sabah2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="./imgs/sabah3.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="imgs/sabah4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img
+            src="https://img.freepik.com/free-photo/row-boats-water-sunny-day_209690-436.jpg?w=1060&t=st=1672933719~exp=1672934319~hmac=427a92f22ca39f7fee3baf2f81e8bf8dd6da09c74f043760f630a81b52f3f5e1"
+            style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="./imgs/sabah1.jpg" style="width:100%" onclick="currentSlide(1)"
+              alt="Awesome view- Sabah">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./imgs/sabah2.jpg" style="width:100%" onclick="currentSlide(2)"
+              alt="Sabah pitches for domestic travel">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./imgs/sabah3.jpeg" style="width:100%" onclick="currentSlide(3)"
+              alt="Unique resorts in Sabah">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./imgs/sabah4.jpg" style="width:100%" onclick="currentSlide(4)"
+              alt="Mount Kinabalu">
+          </div>
+          <div class="column">
+            <img class="demo cursor"
+              src="https://img.freepik.com/free-photo/row-boats-water-sunny-day_209690-436.jpg?w=1060&t=st=1672933719~exp=1672934319~hmac=427a92f22ca39f7fee3baf2f81e8bf8dd6da09c74f043760f630a81b52f3f5e1"
+              style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="right ">
+        <div class="box ok">Language</div>
+        <div class="box ok">Help</div>
+        <div class="box ok">Booking</div>
+        <div class="box ok">Rating
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+
+        <div class="box ok"><b>Customer Review</b>
+          <textarea name="review" id="cusreview" cols="30" rows="10"></textarea>
+          <input type="submit" style="margin: 10px; padding: 15px;">
+        </div>
+        <div class="box ok"><b>Preview</b>
+          <video width="300" controls autoplay>
+            <source src="./imgs/v1.mp4" type="video/mp4">
+            <source src="./imgs/v1.mp4" type="video/ogg">
+            Your browser does not support HTML video.
+          </video>
+
+          <p>
+            Video courtesy of
+            <a href="https://scmlink.com.my/" target="_blank">Fascinating Sabah !!</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="font-size: large;">
+    <button type="button" class="collapsible"><b>About Sabah</b></button>
+    <div class="content">
+      <p>Sabah is Malaysia's second largest state, sharing the island of Borneo with Sarawak,
+        Brunei, and Indonesian Kalimantan. Sabah is endowed with natural diversity, distinct cultures,
+        exciting adventure, stunning beaches, and wonderful cuisines for the adventurous palate.</p>
+    </div>
+
+
+    <button type="button" class="collapsible"><b>The Popular Foods</b></button>
+    <div class="content">
+      <p>
+      <h2>Hinava, Tuhau and Bambangan</h2>
+
+      Probably the most popular of all the Native's traditional dishes and
+      normally served as a side dish. Hinava is saliva-inducing dish that is
+      made of fresh slices of fish, marinated with onion, lime juice, birds-eye
+      chilli, bitter gourd, and ginger.</p>
+    </div>
+
+    <button type="button" class="collapsible"><b>Top Tourists Spots</b></button>
+    <div class="content">
+      <ul>
+        <p>
+          <li> Kinabalu.</li>
+          <li>Taman Negara Gunung Kinabalu, Kundasang, Sabah.</li>
+          <li>Poring Hot Spring, Ranau, Sabah.</li>
+          <li>Mabul Island.</li>
+          <li>Sepilok Orangutan Rehabilitation Centre, Sandakan, Sabah.</li>
+          <li>Danum Valley Conservation Area.</li>
+          <li>Masjid Bandaraya Kota Kinabalu.</li>
+          <li>Sabah State Museum.</li>
+        </p>
+      </ul>
+    </div>
+  </div>
+
+  <script src="SABAH.js"></script>
+</body>
+
+</html>
